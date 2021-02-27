@@ -251,7 +251,7 @@ for c in container:
         minprice = driver.find_element_by_css_selector("li.infoPriceItem.is-largePrice > a").text
         minprice = minprice.split('원')[0].replace(',', '')
     except:
-        minprice = " "
+        minprice = ""
     print(minprice)
 
     
