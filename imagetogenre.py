@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 f = open('./imagetogenre.csv', 'w', newline='')
 wr = csv.writer(f)
-wr.writerow(['순위', '장르', '코미디', '호러', '로맨스', '드라마', '판타지', '볼거리가 많은 화려한 공연'])
+wr.writerow(['순위', '장르', '코미디', '호러', '로맨스', '드라마', '판타지', '화려한공연'])
 musical = "뮤지컬"
 play = "연극"
 
@@ -174,7 +174,7 @@ try:
                     new_distances = new_distances + distances
                     if new_distances >= 10.0:
                         new_distances = 10.0
-            print('볼거리가 많은 화려한 공연', new_distances)
+            print('화려한공연', new_distances)
 
         except:
             None
